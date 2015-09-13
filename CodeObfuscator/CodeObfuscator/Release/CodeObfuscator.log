@@ -1,0 +1,31 @@
+﻿빌드 시작: 2015-09-13 오후 4:54:11
+     1>2 노드의 "C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\CodeObfuscator\CodeObfuscator.vcxproj" 프로젝트(Rebuild 대상)입니다.
+     1>_PrepareForClean:
+         "Release\CodeObfuscator.tlog\CodeObfuscator.lastbuildstate" 파일을 삭제하고 있습니다.
+       InitializeBuildStatus:
+         "AlwaysCreate"이(가) 지정되었기 때문에 "Release\CodeObfuscator.tlog\unsuccessfulbuild"을(를) 만들고 있습니다.
+       ClCompile:
+         E:\Program Files (x86)\VC\bin\CL.exe /c /IC:\Users\Ahn\Desktop\ProjectDist /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D NDEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm- /EHsc /MTd /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp xcode_analyzer.cpp xcode_mem_generator.cpp xcode_mem_manager.cpp xcode_obfuscator.cpp
+         main.cpp
+         xcode_analyzer.cpp
+         xcode_mem_generator.cpp
+         xcode_mem_manager.cpp
+         xcode_obfuscator.cpp
+       Link:
+         E:\Program Files (x86)\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\Release\CodeObfuscator.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\Users\Ahn\Desktop\ProjectDist kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\Release\CodeObfuscator.pdb" /SUBSYSTEM:CONSOLE /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\Release\CodeObfuscator.lib" /MACHINE:X86 /SAFESEH Release\main.obj
+         Release\xcode_analyzer.obj
+         Release\xcode_mem_generator.obj
+         Release\xcode_mem_manager.obj
+         Release\xcode_obfuscator.obj
+     1>LINK : warning LNK4098: 'LIBCMT' defaultlib가 다른 라이브러리와 충돌합니다. /NODEFAULTLIB:library를 사용하십시오.
+         코드를 생성하고 있습니다.
+         코드를 생성했습니다.
+         CodeObfuscator.vcxproj -> C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\Release\CodeObfuscator.exe
+       FinalizeBuildStatus:
+         "Release\CodeObfuscator.tlog\unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Release\CodeObfuscator.tlog\CodeObfuscator.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\Ahn\Desktop\재훈이 개별 프로젝트\CodeObfuscator\CodeObfuscator\CodeObfuscator.vcxproj" 프로젝트를 빌드했습니다(Rebuild 대상).
+
+빌드했습니다.
+
+경과 시간: 00:00:04.80
