@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="common">
+      <UniqueIdentifier>{6810cdab-7d71-41f7-99c2-fdd77570c153}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator">
+      <UniqueIdentifier>{243f70ee-b532-49c0-b9fe-4cc59b43c51a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator\utils">
+      <UniqueIdentifier>{bcae78a9-31e3-440a-8643-c3d728bf012e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator\analyzer">
+      <UniqueIdentifier>{afa9b42c-436b-4e81-aa35-55fdf395c5f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator\memory_manager">
+      <UniqueIdentifier>{3fecd396-adae-4957-9a06-a3abb1497707}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator\generator">
+      <UniqueIdentifier>{60262832-5ee6-40c1-9da1-5fc77e4c68ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CodeObfuscator\obfuscator">
+      <UniqueIdentifier>{af41da55-c1ab-4f0c-8c73-6def6451bf41}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xcode_analyzer.cpp">
+      <Filter>CodeObfuscator\analyzer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xcode_mem_manager.cpp">
+      <Filter>CodeObfuscator\memory_manager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xcode_mem_generator.cpp">
+      <Filter>CodeObfuscator\generator</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\xcode_obfuscator.cpp">
+      <Filter>CodeObfuscator\obfuscator</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xcode_analyzer.hpp">
+      <Filter>CodeObfuscator\analyzer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xcode_mem_manager.hpp">
+      <Filter>CodeObfuscator\memory_manager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xcode_mem_generator.hpp">
+      <Filter>CodeObfuscator\generator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xcode_obfuscator.hpp">
+      <Filter>CodeObfuscator\obfuscator</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\xcode_obfuscator_utils.hpp">
+      <Filter>CodeObfuscator\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

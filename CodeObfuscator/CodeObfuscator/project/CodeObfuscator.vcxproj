@@ -10,6 +10,20 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\xcode_analyzer.cpp" />
+    <ClCompile Include="..\src\xcode_mem_generator.cpp" />
+    <ClCompile Include="..\src\xcode_mem_manager.cpp" />
+    <ClCompile Include="..\src\xcode_obfuscator.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\xcode_analyzer.hpp" />
+    <ClInclude Include="..\src\xcode_mem_generator.hpp" />
+    <ClInclude Include="..\src\xcode_mem_manager.hpp" />
+    <ClInclude Include="..\src\xcode_obfuscator.hpp" />
+    <ClInclude Include="..\src\xcode_obfuscator_utils.hpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{D559AF01-DE06-4ADA-A712-C6E922E38C7F}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -80,20 +94,6 @@
       <AdditionalLibraryDirectories>C:\Users\Ahn\Desktop\ProjectDist</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="xcode_analyzer.cpp" />
-    <ClCompile Include="xcode_mem_generator.cpp" />
-    <ClCompile Include="xcode_mem_manager.cpp" />
-    <ClCompile Include="xcode_obfuscator.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="xcode_analyzer.hpp" />
-    <ClInclude Include="xcode_mem_generator.hpp" />
-    <ClInclude Include="xcode_mem_manager.hpp" />
-    <ClInclude Include="xcode_obfuscator.hpp" />
-    <ClInclude Include="xcode_obfuscator_utils.hpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
