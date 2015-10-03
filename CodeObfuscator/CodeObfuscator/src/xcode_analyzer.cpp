@@ -1,6 +1,7 @@
 #include "xcode_analyzer.hpp"
 
-XObfuCodeAnalyzer::XObfuCodeAnalyzer()
+XObfuCodeAnalyzer::XObfuCodeAnalyzer(XObfuMemoryManager *obfu_mem_manager)
+:obfu_mem_manager_(obfu_mem_manager)
 {
 }
 
@@ -10,7 +11,7 @@ XObfuCodeAnalyzer::~XObfuCodeAnalyzer()
 
 HRESULT 
 __stdcall 
-XObfuCodeAnalyzer::Analze(ULONG start, ULONG end)
+XObfuCodeAnalyzer::Analyze(ULONG start, ULONG end)
 {
 	PVOID ptr = (PVOID)(start);
 	ULONG counter = 0;
@@ -44,6 +45,29 @@ XObfuCodeAnalyzer::Analze(ULONG start, ULONG end)
 		counter++;
 	}
 	return S_OK;
+}
+
+BOOL 
+XObfuCodeAnalyzer::IsSupportCode(const INSTCODEINFO &instcode_info)
+{
+	return instcode_info.support_check;
+}
+
+HRESULT
+__stdcall
+XObfuCodeAnalyzer::Analyze(const InstCodeVec & inst_code_vec)
+{
+	BOOST_FOREACH(const INSTCODEINFO &inst, inst_code_vec)
+	{
+		if (IsSupportCode(inst))
+		{
+
+		}
+		else
+		{
+
+		}
+	}
 }
 
 InstCodeVec&
