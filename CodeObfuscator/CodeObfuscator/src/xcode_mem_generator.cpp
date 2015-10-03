@@ -34,7 +34,7 @@ __stdcall
 XObfuCodeGenerator::Generate(InstCodeVec &inst_code_buffer)
 {
 	ULONG code_size = GetCodeSize(inst_code_buffer);
-	if (code_size >= (4096 * 100)) //100MB
+	if (code_size >= (4096 * 100)) //100KB
 		return E_FAIL;
 
 	HRESULT status = obfu_mem_manager_->Append(code_size, obfu_memory_id_);

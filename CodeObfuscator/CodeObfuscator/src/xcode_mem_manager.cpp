@@ -52,10 +52,32 @@ XObfuMemoryManager::Delete(ULONG id)
 		CODEMANAGERINFO cm_info = (*it);
 		if (cm_info.ptr && cm_info.id == id)
 		{
-			VirtualFree(cm_info.ptr, cm_info.size, MEM_DECOMMIT | MEM_RELEASE);
+			VirtualFree(cm_info.ptr, 0, MEM_RELEASE);
 			code_info_vec_.erase(it);
 			return TRUE;
 		}
 	}
 	return FALSE;
+}
+
+PVOID
+XObfuMemoryManager::GetMemory(ULONG id)
+{
+	BOOST_FOREACH(const CODEMANAGERINFO &mem_info, code_info_vec_)
+	{
+		if (mem_info.id == id)
+			return mem_info.ptr;
+	}
+	return NULL;
+}
+
+ULONG
+XObfuMemoryManager::GetSize(ULONG id)
+{
+	BOOST_FOREACH(const CODEMANAGERINFO &mem_info, code_info_vec_)
+	{
+		if (mem_info.id == id)
+			return mem_info.size;
+	}
+	return NULL;
 }

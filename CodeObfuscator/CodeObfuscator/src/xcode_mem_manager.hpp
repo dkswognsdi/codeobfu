@@ -31,6 +31,9 @@ public:
 	BOOL __stdcall Append(ULONG size, ULONG id);
 
 	BOOL __stdcall Delete(ULONG id);
+
+	PVOID GetMemory(ULONG id);
+	ULONG GetSize(ULONG id);
 };
 
 typedef boost::shared_ptr<XObfuMemoryManager> XObfuMemoryManagerSharedPtr;
