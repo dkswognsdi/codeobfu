@@ -3,8 +3,8 @@
 
 XCodeObfuscator::XCodeObfuscator()
 {
-	analyzer_		= boost::make_shared<XObfuCodeAnalyzer>();
 	mem_manager_	= boost::make_shared<XObfuMemoryManager>();
+	analyzer_		= boost::make_shared<XObfuCodeAnalyzer>(mem_manager_.get());
 	generator_		= boost::make_shared<XObfuCodeGenerator>(mem_manager_.get());
 }
 
@@ -15,7 +15,7 @@ XCodeObfuscator::~XCodeObfuscator()
 ULONG
 XCodeObfuscator::GetSize(ULONG start, ULONG end)
 {
-	HRESULT status = analyzer_->Analze(start, end);
+	HRESULT status = analyzer_->Analyze(start, end);
 	if (!SUCCEEDED(status))
 		return -1;
 
